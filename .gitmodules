@@ -1,0 +1,3 @@
+[submodule "Catbird"]
+	path = Catbird
+	url = https://github.com/HRLAX45-SDC/Catbird.git
