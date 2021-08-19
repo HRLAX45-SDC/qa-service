@@ -1,5 +1,27 @@
 {
+  "name": "qa-service",
+  "version": "1.0.0",
+  "description": "Questions and Answers API Service for System Design Capstone project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
     "pg": "^8.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRLAX45-SDC/qa-service.git"
+  },
+  "keywords": [],
+  "author": "Michelle Guan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HRLAX45-SDC/qa-service/issues"
+  },
+  "homepage": "https://github.com/HRLAX45-SDC/qa-service#readme"
 }

@@ -1,4 +1,5 @@
 # CSV data files
 *.csv
 test.txt
+config.js
 
