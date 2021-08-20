@@ -72,6 +72,8 @@ create table schema1.answers_1 as select
 alter table schema1.answers_1
   add column answer_id serial primary key;
 
+drop schema1.answers;
+
 /****************************
 Create answer photos data set
 *****************************/
@@ -98,6 +100,8 @@ answer_id
 ,json_agg(json_build_object('id', id, 'url', url)) as photos
 from schema1.answer_photos
 group by answer_id;
+
+drop schema1.answer_photos;
 
 /*****************************
 Create answer photos combined
