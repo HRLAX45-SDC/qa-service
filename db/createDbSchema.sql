@@ -22,7 +22,7 @@ create table schema1.questions (
   helpful integer
 );
 
-copy schema1.questions from '/Users/michelleguan/HackReactor/SrPhase/qa-service/Data/questions.csv' delimiter ',' csv header;
+copy schema1.questions from '/home/ubuntu/qa-service/Data/questions.csv' delimiter ',' csv header;
 
 drop table if exists schema1.questions_1;
 create table schema1.questions_1 as select
@@ -56,7 +56,7 @@ create table schema1.answers(
   helpful integer
 );
 
-copy schema1.answers from '/Users/michelleguan/HackReactor/SrPhase/qa-service/Data/answers.csv' delimiter ',' csv header;
+copy schema1.answers from '/home/ubuntu/qa-service/Data/answers.csv' delimiter ',' csv header;
 
 drop table if exists schema1.answers_1;
 create table schema1.answers_1 as select
@@ -85,7 +85,7 @@ create table schema1.answer_photos(
 );
 
 
-copy schema1.answer_photos from '/Users/michelleguan/HackReactor/SrPhase/qa-service/Data/answers_photos.csv' delimiter ',' csv header;
+copy schema1.answer_photos from '/home/ubuntu/qa-service/Data/answers_photos.csv' delimiter ',' csv header;
 
 alter table schema1.answer_photos
   add constraint answer_photos_pk primary key (id),
